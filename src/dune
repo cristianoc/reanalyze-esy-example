@@ -1,0 +1,9 @@
+(executable
+ (preprocess
+  (action
+   (run %{bin:cppo} -V OCAML:%{ocaml_version} %{input-file})))
+ ; The main module that will become the binary.
+ (name TestYojson)
+ (flags "-w" "+6+26+27+32+33+39")
+ ; Depends on:
+ (libraries unix str compiler-libs.common yojson))

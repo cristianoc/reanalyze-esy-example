@@ -1,0 +1,23 @@
+{
+  "name": "reanalyze-esy-example",
+  "version": "1.0",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "ocaml": "~4.09.1",
+    "@opam/yojson": "*",
+    "@opam/reanalyze": "*",
+    "@opam/dune": "2.0.1"
+  },
+  "resolutions": {
+    "@opam/reanalyze": "cristianoc/reanalyze:reanalyze.opam#bdc6c2c50cd2fd30561c0c8e3b00a5b2c24558c8"
+  },
+  "scripts": {
+    "clean": "dune clean",
+    "check-exceptions": "reanalyze.exe -exception-cmt #{self.target_dir}",
+    "dce": "reanalyze.exe -dce-cmt #{self.target_dir}"
+  },
+  "esy": {
+    "build": "dune build @check @all"
+  }
+}
