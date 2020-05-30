@@ -5,12 +5,13 @@
   },
   "devDependencies": {
     "ocaml": "~4.09.1",
+    "@opam/atdgen-runtime": "*",
     "@opam/yojson": "*",
     "@opam/reanalyze": "*",
     "@opam/dune": "2.0.1"
   },
   "resolutions": {
-    "@opam/reanalyze": "cristianoc/reanalyze:reanalyze.opam#bdc6c2c50cd2fd30561c0c8e3b00a5b2c24558c8"
+    "@opam/reanalyze": "cristianoc/reanalyze:reanalyze.opam#97c622c0a3f480ffc9cacfa33b9bd0ce42c2d83b"
   },
   "scripts": {
     "clean": "dune clean",
